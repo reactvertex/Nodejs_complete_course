@@ -1,11 +1,12 @@
 const express = require('express');
+const path = require('path');
 
 const router = express.Router();
 
 // admin/add-product => GET
 router.get('/add-product',(req,res,next) =>{
     console.log("this is middlware call");
-    res.send("<form action='/admin/product' method='post'><input type='text' name='title'><button type='submit'>send</button></input></form>")
+    res.sendFile(path.join(__dirname, '../', 'views', 'add-product.html'))
 })
 
 // admin/add-product => POST    
