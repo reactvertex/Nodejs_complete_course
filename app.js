@@ -9,7 +9,7 @@ const errorPageRouter = require('./routes/404');
 
 app.use(bodyParser.urlencoded({extended : false}))
 
-app.use(adminRouters);
+app.use('/admin',adminRouters);
 app.use(shopRouters);
 app.use(errorPageRouter);
 
