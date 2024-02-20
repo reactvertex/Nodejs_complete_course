@@ -1,0 +1,33 @@
+.prodcut-form {
+    margin: 10px;
+    margin:auto;
+    width: 20rem;
+    max-width: 90%;
+}
+.form-control{
+    margin: 10px 0;
+}
+.form-control label,
+.form-control input{
+   display: block;
+   width: 100%;
+}
+.form-control input {
+    border: 1px solid #d4aa2c;
+    font: inherit;
+    border-radius: 2px;
+}
+button{
+    border: 1px solid #342cd4;
+    border-radius: 3px;
+    font: inherit;
+    cursor: pointer;
+    color: #342cd4;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+button:hover,
+button:active {
+    background-color: #342cd4;
+    color: #fff;
+}
